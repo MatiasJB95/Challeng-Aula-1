@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="scripts/scripts.js" ></script>
+    <title>Challenge One. Codificador4  </title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <img class="logo" src="img/Logo.png" alt="Logo">
+            <h1 class="titulo">Encriptar/Desencriptar</h1>
+        </div>
+        <div class="izq">
+            <textarea class="inputtext" id="IngText"  rows="8" cols="80" placeholder="Ingrese el texto aqui" ></textarea>
+        </div>
+        <div class="der">
+            <img class="muheco" id="muheco" src="img/Muñeco.png" alt="muheco">
+            <h2 class="tituloder" id="leyenda" >Ningun mensaje fue encontrado</h2>
+            <textarea class="texto" id="textdes" name="nombre" rows="8" cols="80">Ingrese el texto que desees encriptar o desencriptar</textarea>
+            <button class="botoncopiar" id="copy" type="button" onclick="copy()">Copiar</button>
+        </div>
+        <div class="menuButton">
+          <p>solo minusculas y sin acentos</p>
+          <button type="button" id="encrip" onclick="encriptar()">Encriptar</button>
+          <button type="button" id="desencrip" onclick="desencriptar()" >Desencriptar</button>
+        </div>
+
+
+    </div>
+</body>
+</html>
