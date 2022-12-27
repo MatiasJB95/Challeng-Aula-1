@@ -1,3 +1,14 @@
+function check(string){
+    tecla = document.getElementById("IngText").value.toLowerCase();
+    var out = '';
+    var filtro = 'abcdefghijklmnñopqrstuvwxyz ';
+	
+    for (var i=0; i<string.length; i++)
+       if (filtro.indexOf(string.charAt(i)) != -1) 
+	     out += string.charAt(i);
+    return out;
+}
+
 function encriptar() {
     var texto = document.getElementById("IngText").value.toLowerCase();
    
@@ -33,5 +44,4 @@ function copy () {
     var textoenarea = document.querySelector("#textdes");
     textoenarea.select();
     document.execCommand("copy");
-    alert("Se Copio")
 }
